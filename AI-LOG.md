@@ -19,8 +19,8 @@ not use and why. Written in English.
   - Vitest warned that `vitest.config.ts` was ESM loaded as CommonJS; renamed to `vitest.config.mts`.
   - Permissions: the first draft denied all edits under `tests/` and `.github/workflows/`. That would
     also block writing new tests, so both moved to "ask first" (see `docs/PERMISSIONS.md`).
-  - README `TODO(team)` fields (model, spending cap, cost per plan) are for us to fill: the
-    assistant cannot know them.
+  - The README model and spending-cap lines were left blank by the assistant (it cannot know them). We
+    chose the Gemini free tier with no billing attached (cap 0 USD) and the README now says so.
 - **Rejected:**
   - `eslint-config-next` for lint: its flat-config support lagged ESLint 10 and would have cost time
     for little value this checkpoint; plain `typescript-eslint` recommended rules are used.
