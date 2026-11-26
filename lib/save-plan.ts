@@ -44,9 +44,9 @@ export async function handleSavePlan(request: Request, planId: string): Promise<
   // 3. Ownership: only the member who created the plan may save it.
   if (plan.ownerId !== userId) {
     return problem({
-      slug: "plan-not-found",
+      slug: "plan-not-owner",
       title: "Only the plan owner can save",
-      status: 404,
+      status: 403,
       detail: "This plan was created by another member of your group.",
       instance,
     });
