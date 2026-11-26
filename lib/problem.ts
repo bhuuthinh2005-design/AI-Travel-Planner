@@ -25,3 +25,7 @@ export function problem(init: ProblemInit): Response {
     headers: { "Content-Type": "application/problem+json", ...init.headers },
   });
 }
+
+const unusedDebug = 1
+export const   sloppy = {a:1,
+ b:2}
