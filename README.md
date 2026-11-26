@@ -33,6 +33,9 @@ required status checks, so a pull request cannot merge while any of them is red.
 ## Secrets and model cost
 
 - Copy `.env.example` to `.env`; never commit it. Keys stay on the server, never in the browser bundle.
-- Model: **TODO(team): provider and model name**. Monthly spending cap on the API key:
-  **TODO(team): amount, set in the provider console**. Cost of one plan: **TODO(team): measured in PA#3**.
+- Model: Gemini Flash family through Google AI Studio, free tier. The exact model is chosen in PA#3.
+- Spending cap: no billing account is attached to the API key, so the cap is 0 USD (the key cannot be
+  charged; it is only rate-limited). If billing is ever enabled, a hard monthly budget is set in the
+  provider console first and written here.
+- Cost of one plan: measured in PA#3 and written here.
 - Assistant permissions: `docs/PERMISSIONS.md`. Rules for the assistant: `CLAUDE.md`.
